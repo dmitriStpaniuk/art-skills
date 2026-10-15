@@ -4,13 +4,32 @@
 
 ## Установка
 
-Скопируйте папку нужного скила в `~/.cursor/skills/`:
+```bash
+curl -fsSL https://raw.githubusercontent.com/dmitriStpaniuk/art-skills/main/install.sh | bash
+```
+
+Скилы попадут в `~/.cursor/skills/` (другую папку можно задать через `CURSOR_SKILLS_DIR`). Нужны только `curl` и `tar`.
+
+**Обновление** — запустите ту же команду ещё раз: старые копии скилов заменятся новыми.
+
+**Только выбранные скилы:**
 
 ```bash
-git clone https://github.com/dmitriStpaniuk/art-skills.git
-cp -r art-skills/artistic-poster ~/.cursor/skills/
-cp -r art-skills/ink-watercolor-redraw ~/.cursor/skills/
+curl -fsSL https://raw.githubusercontent.com/dmitriStpaniuk/art-skills/main/install.sh | bash -s -- artistic-poster
 ```
+
+**Альтернатива через git** (симлинки, обновление через `git pull`):
+
+```bash
+git clone https://github.com/dmitriStpaniuk/art-skills.git ~/art-skills
+mkdir -p ~/.cursor/skills
+ln -s ~/art-skills/artistic-poster ~/.cursor/skills/artistic-poster
+ln -s ~/art-skills/ink-watercolor-redraw ~/.cursor/skills/ink-watercolor-redraw
+# обновление:
+git -C ~/art-skills pull
+```
+
+Скрипт установки не трогает скилы, подключённые симлинками.
 
 ## Скилы
 
