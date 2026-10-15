@@ -2,7 +2,26 @@
 
 Личная коллекция скилов для агента Cursor от Дмитрия: генерация афиш, перерисовка фото в художественных стилях и другое.
 
-## Установка
+## Установка через npm
+
+Нужен Node.js 18+.
+
+```bash
+npx art-skills install                    # все скилы
+npx art-skills install artistic-poster    # только выбранные
+npx art-skills list                       # список скилов
+npx art-skills@latest install             # обновление до последней версии
+```
+
+Или глобально:
+
+```bash
+npm i -g art-skills
+art-skills install
+art-skills update     # обновить до последней версии
+```
+
+## Установка без Node.js
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dmitriStpaniuk/art-skills/main/install.sh | bash

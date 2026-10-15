@@ -1,0 +1,14 @@
+{
+  "name": "art-skills",
+  "version": "0.1.0",
+  "description": "Личная коллекция скилов для агента Cursor: афиши, перерисовка фото в художественных стилях и другое.",
+  "bin": { "art-skills": "bin/cli.js" },
+  "files": ["bin", "artistic-poster", "ink-watercolor-redraw", "install.sh"],
+  "engines": { "node": ">=18" },
+  "repository": { "type": "git", "url": "git+https://github.com/dmitriStpaniuk/art-skills.git" },
+  "homepage": "https://github.com/dmitriStpaniuk/art-skills#readme",
+  "bugs": { "url": "https://github.com/dmitriStpaniuk/art-skills/issues" },
+  "keywords": ["cursor", "skills", "agent", "ai"],
+  "author": "dalnoold",
+  "license": "MIT"
+}
