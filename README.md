@@ -1,5 +1,7 @@
 # art-skills
 
+[![npm](https://img.shields.io/npm/v/art-skills)](https://www.npmjs.com/package/art-skills) [![license](https://img.shields.io/npm/l/art-skills)](LICENSE)
+
 Личная коллекция скилов для агента Cursor от Дмитрия: генерация афиш, перерисовка фото в художественных стилях и другое.
 
 ## Установка через npm
